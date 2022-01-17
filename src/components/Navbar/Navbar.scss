@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Rock+Salt&display=swap");
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1em solid black;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+
+  .logoContainer {
+    padding-left: 10px;
+  }
+
+  .logo {
+    font-family: "Rock Salt", cursive;
+    font-size: large;
+  }
+
+  .menu {
+    padding-right: 20px;
+
+    .menuButton {
+      position: relative;
+      z-index: 1111;
+      color: black;
+    }
+
+    .menuOption {
+      background-color: hsl(0 0 10% / 80%);
+      color: #fff;
+      position: absolute;
+      padding: 3rem 3rem 0 0;
+      right: 0;
+      top: 0;
+      text-align: start;
+      height: 100vh;
+      width: 40%;
+      transition: transform 0.5s ease-in-out;
+
+      ul {
+        list-style-type: none;
+
+        li {
+          padding: 0.5em;
+        }
+      }
+
+      .closedButton {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.menuOption[data-visible="false"] {
+  transform: translateX(100%);
+}
+
+.menuOption[data-visible="true"] {
+  transform: translateX(0%);
+}
+
+[aria-hidden="true"] {
+  display: none;
+}

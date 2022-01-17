@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.inputs_container {
+  font-family: "Playfair Display", serif;
+  padding: 50px 0 100px 0;
+  overflow: scroll;
+  //   background-image: url(./../../img/loginBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginText {
+  display: block;
+  text-align: center;
+  font-size: 2.2em;
+  letter-spacing: 0.1em;
+  margin: 1em;
+}
+
+.label {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+.input {
+  display: block;
+  width: 70%;
+  height: 40px;
+  margin: 0.7em auto;
+  font-size: large;
+}
+
+.cta {
+  margin: 3em auto;
+  width: 100%;
+}
+
+.cta button {
+  display: block;
+  margin: 1em auto;
+  width: 40%;
+  padding: 0.5em;
+  font-size: large;
+  text-align: center;
+  background-color: #c4c4c4;
+  border-radius: 360px;
+  border: none;
+}
+
+.cta button:hover {
+  background-color: black;
+  color: white;
+}
